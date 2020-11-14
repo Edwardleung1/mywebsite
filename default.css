@@ -21,6 +21,10 @@ body {
   margin: 0;
 }
 
+body * {
+  transition: 0.3s;
+}
+
 h1,
 h2,
 h3,
@@ -336,6 +340,44 @@ h6 {
 .post-intro {
   color: #4b5156;
   font-size: 14px;
+}
+
+#status {
+  max-width: 620px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin-bottom: 50px;
+  padding: 10px;
+  border-radius: 8px;
+}
+
+#status.success {
+  background-color: rgb(211, 250, 153);
+  animation: status 4s ease forwards;
+}
+
+#status.error {
+  background-color: rgb(250, 129, 92);
+  color: white;
+  animation: status 4s ease forwards;
+}
+
+@keyframes status {
+  0% {
+    opacity: 1;
+    pointer-events: all;
+  }
+  90% {
+    opacity: 1;
+    pointer-events: all;
+  }
+  100% {
+    opacity: 0;
+    pointer-events: none;
+  }
 }
 
 #contact-form {

@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>PLAY TETRIS - Edward Leung</title>
+
+
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1" />
+	<link rel="icon" type="image/png" sizes="32x32" href="/images/tetris-32x32.png">
+	<link href="https://fonts.googleapis.com/css2?family=Russo+One&display=swap" rel="stylesheet">
+
+	<link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@500&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css" integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp" crossorigin="anonymous">
+
+	<link rel="stylesheet" type="text/css" href="/default.css">
+
+
+	<style type="text/css">
+		.img-container{
+			max-width: 600px;
+		}
+
+		img{
+			width: 100%
+		}
+
+	</style>
+
+</head>
+<body>
+	<div class="nav-wrapper">
+
+		<!-- Link around dots-wrapper added after tutorial video -->
+		<a href="/index.html">
+			<div class="dots-wrapper">
+				<div id="dot-1" class="browser-dot"></div>
+				<div id="dot-2" class="browser-dot"></div>
+				<div id="dot-3" class="browser-dot"></div>
+			</div>
+		</a>
+
+		<ul id="navigation">
+			<li><a href="/index.html#contact">Contact</a></li>
+
+		</ul>
+	</div>
+
+	<div class="main-container">
+		<br>
+		
+		<h3>Tetris Game</h3>
+		
+		<div class="img-container">
+			<img src="/images/tetris.png">
+		</div>
+
+		<p>This is my JavaScript take on the classic game 'Tetris'.</p>
+
+		<p>This project demonstrates a range JavaScript skills, including manipulating the DOM, the Math Object, functions and if statements, predominantly using arrays.</p>
+		
+		<p>The board is made up of 200 squares (10 x 20) and the starting position for each 'tetromino' is in position 4. The mini grid is a smaller 4 x 4 version displaying which shape will be next available.</p>
+
+    <p>The game is operated by using the four keycodes and the player scores 10 points for each row cleared. The user is not able to move right when the shape is place far right, and vice versa for a shape place on the direct opposite.</p>
+    
+    <p>Music is implemented in the Play/Pause function, as well as the Mute/On button. The user is able to toggle this on preference.</p>
+
+    <p>The functionality is currently set on the tetromino moving down a square every 0.5 seconds.</p>
+
+		<h5>Technologies:</h5>
+		<ul>
+			<li>- HTML5</li>
+			<li>- CSS3</li>
+			<li>- JavaScript</li>
+		</ul>
+
+    <button id="submit-btn"><a href="https://github.com/Edwardleung1/tetris" target="_blank">
+      View Code on Github
+      <i class="fab fa-github" aria-hidden="true"></i>
+    </a></button>
+
+		<button id="submit-btn"><a href="https://classic-tetris-game.netlify.app/" 
+			target="_blank">
+      View Live Preview
+      <i class="fas fa-laptop-code" aria-hidden="true"></i>
+		</a></button>
+		
+	</div>
+
+</body>
+</html>

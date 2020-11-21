@@ -53,8 +53,9 @@ window.addEventListener("DOMContentLoaded", function() {
   }
 
   function error() {
+    form.reset();
     status.classList.add('error');
-    status.innerHTML = "Oops! There was a problem.";
+    status.innerHTML = "Oops! There was a problem, please try again!";
   }
 
   // handle the form submission event

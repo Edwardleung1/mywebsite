@@ -323,7 +323,7 @@ h6 {
 .thumbnail {
   display: block;
   width: 100%;
-  height: 180px;
+  height: 280px;
   object-fit: cover;
 }
 
@@ -418,6 +418,10 @@ h6 {
   color: #fff;
   background-color: var(--buttonColor);
   border: none;
+}
+
+#submit-btn a {
+  display: block;
 }
 
 @media screen and (max-width: 1200px) {

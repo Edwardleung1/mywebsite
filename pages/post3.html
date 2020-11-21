@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Loan Calculator</title>
+
+
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1" />
+
+  <link href="https://fonts.googleapis.com/css2?family=Russo+One&display=swap" rel="stylesheet">
+
+	<link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@500&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css" integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp" crossorigin="anonymous">
+
+	<link rel="stylesheet" type="text/css" href="/default.css">
+
+
+	<style type="text/css">
+		.img-container{
+			max-width: 600px;
+		}
+
+		img{
+			width: 100%
+		}
+
+	</style>
+
+</head>
+<body>
+	<div class="nav-wrapper">
+
+		<!-- Link around dots-wrapper added after tutorial video -->
+		<a href="/index.html">
+			<div class="dots-wrapper">
+				<div id="dot-1" class="browser-dot"></div>
+				<div id="dot-2" class="browser-dot"></div>
+				<div id="dot-3" class="browser-dot"></div>
+			</div>
+		</a>
+
+		<ul id="navigation">
+			<li><a href="/index.html#contact">Contact</a></li>
+
+		</ul>
+	</div>
+
+	<div class="main-container">
+		<br>
+		
+		<h3>Bank Loan Calculator</h3>
+		
+		<div class="img-container">
+			<img src="/images/calculator.jpg">
+		</div>
+
+		<p>This bank loan calculator allows the user to input a loan amount, an interest percentage and the amount of years to repay the loan back. The results display a monthly repayment fee, a total repayment fee and a total of the interest owed.</p>
+
+		<p>The markup is fairly simple with forms and input groups for the user to insert their data. The styling mainly consists of utilizing bootstrap classes inc. containers, padding, margins and prepends.</p>
+		
+		<p>The JavaScript is fairly succinct. It uses the DOM to select HTML elements, basic math formula to calculate results and timeout for an error if the user does not input any numbers.</p>
+
+    <p>The second half of the UI is not visible until the 3 boxes are filled. This was achieved by using a submit function on addEventListener. A 'loader' image is used to create an effect where the calculator is actually 'calculating' the result.</p>
+    
+		<h5>Technologies:</h5>
+		<ul>
+			<li>- HTML5</li>
+			<li>- CSS3</li>
+			<li>- Bootstrap</li>
+			<li>- JavaScript</li>
+		</ul>
+
+    <button id="submit-btn"><a href="https://github.com/Edwardleung1/bank-loan-calculator" target="_blank">
+      View Code on Github
+      <i class="fab fa-github" aria-hidden="true"></i>
+    </a></button>
+
+		<button id="submit-btn"><a href="https://bank-loan-calculate.netlify.app/" 
+			target="_blank">
+      View Live Preview
+      <i class="fas fa-laptop-code" aria-hidden="true"></i>
+		</a></button>
+		
+	</div>
+
+</body>
+</html>
